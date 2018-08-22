@@ -2,3 +2,15 @@ language: go
 
 go:
   - 1.10.x
+
+sudo: false
+
+before_install:
+  - go get -u github.com/gin-gonic/gin
+  
+install:
+  - echo "install"
+
+script: 
+  - echo "script"
+  - go test -v ./...
