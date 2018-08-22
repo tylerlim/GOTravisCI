@@ -13,4 +13,4 @@ install:
 
 script: 
   - echo "script"
-  - go test -v ./...
+  - go test -v
