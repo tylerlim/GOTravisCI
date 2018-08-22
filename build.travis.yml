@@ -3,6 +3,8 @@ language: go
 go:
   - 1.10.3
 
+sudo: required
+
 before_install:
   - go get -u github.com/gin-gonic/gin
   
@@ -11,4 +13,4 @@ install:
 
 script: 
   - echo "script"
-  - go run index.go
+  - go test ./...
