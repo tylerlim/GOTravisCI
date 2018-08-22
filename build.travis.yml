@@ -1,0 +1,10 @@
+language: go
+
+go:
+  - 1.10.3
+
+before_install:
+  - go get -u github.com/gin-gonic/gin
+  
+script: go run index.go
+
