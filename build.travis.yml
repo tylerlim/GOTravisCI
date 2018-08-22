@@ -6,5 +6,9 @@ go:
 before_install:
   - go get -u github.com/gin-gonic/gin
   
-script: go run index.go
+install:
+  - echo "install"
 
+script: 
+  - echo "script"
+  - go run index.go
