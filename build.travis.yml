@@ -4,8 +4,6 @@ go:
   - 1.9.x
   - 1.x
 
-sudo: false
-
 before_install:
   - go get -u github.com/gin-gonic/gin
   
